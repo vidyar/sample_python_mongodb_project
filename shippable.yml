@@ -10,7 +10,8 @@ services:
 
 env:
  global:
-  - secure: EJoLa4gLNnNsYu/Wapz7bN3DkaHEAjBZjpi73Tv9Hqkb1YmfncguS8tKFjpBOrHRs812vu2rRXWWMyp3uedygYbbHFKYf2WnNkRKj30Ee+UhuPyCpbym9ZX6NW0zjoYcWepfQEbCejtxeO6hB3CQn+lKy+L68yyHEumQ3IRYYIGdKY6Zm6fkgNgqwniVr+3rvxERoPFsDKLk9sHHGOcvbfV5wQGuwC6yUNS6TePlYzfmo9hmbKxXf9CjIxwEr4B0F1zTOc7uPuREAaADtDGHjyLkz9lt68mwgkimPPNDMVeb9/hP9GU+ESBI2Nxi8Y+lEPZls4DJTB9VaZVBq5uDLA==
+  - secure: RVkxaAf4Nep7iNIQPyu6ry/ngyH63l54IpJG2gcrrgpsWdjRddtCrtiOqmFlSbeTxm83/hNgHVvXEe2ZviihHhOS+IdytLAuE++e0ZY2TUS2mMHb2n36Cn3uXwgwBVdnfwHs9iuiUkmTOH6XgDGEBaCQ10aaDB1myCzio3KAViP/fPUAy6Bf7iyGZw9vK4Ahbt4qZ989lzqr+IwMiqtnZN5F574VJgXLmvzaSKcSnsdRqAATlXkcAid1xRBFM++zzfiUNal55/xHkq5qGTFXE3nAPFUgJWiFXC13zFMghmP2TNLB+ramHOtPnzKYKx4fkyysNCDDFcfuXu+0GyJTeQ==
+
 install:
   - pip install -r requirements.txt
 
@@ -23,7 +24,7 @@ script:
   - nosetests test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
   - which python && coverage run --branch test.py
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
-  - echo $foo 
+  - echo $Foo 
   
 notifications:
   email: false
