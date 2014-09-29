@@ -31,3 +31,5 @@ notifications:
 branches:
    only:
      - test01
+archive: true
+commit_container: vidyar/sample_python_mongodb_project
