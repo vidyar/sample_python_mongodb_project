@@ -29,3 +29,8 @@ script:
   
 notifications:
   email: false
+
+archive: true
+branches:
+   only:
+      - v0.24
