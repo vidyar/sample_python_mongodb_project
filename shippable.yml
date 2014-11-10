@@ -12,7 +12,7 @@ services:
 env:
  global:
   - secure: RVkxaAf4Nep7iNIQPyu6ry/ngyH63l54IpJG2gcrrgpsWdjRddtCrtiOqmFlSbeTxm83/hNgHVvXEe2ZviihHhOS+IdytLAuE++e0ZY2TUS2mMHb2n36Cn3uXwgwBVdnfwHs9iuiUkmTOH6XgDGEBaCQ10aaDB1myCzio3KAViP/fPUAy6Bf7iyGZw9vK4Ahbt4qZ989lzqr+IwMiqtnZN5F574VJgXLmvzaSKcSnsdRqAATlXkcAid1xRBFM++zzfiUNal55/xHkq5qGTFXE3nAPFUgJWiFXC13zFMghmP2TNLB+ramHOtPnzKYKx4fkyysNCDDFcfuXu+0GyJTeQ==
-
+  - secure: yjDJb1KodpQxuB5iv37bolU5zCbdDTccE0I4IPkc4ODFoWhLM/Rfgj4IqxLyD82NsXObbVW2OAEG6EJrkGZWXRhHxaOWrwH45XlX2mhBaqcHf8aM5PiBBPDFbtnLfGCG64hwGekUI6zDZOmJ9m9/Cv8w7nkVNXAc+dR4U1OOa3QRickakijSKJTYRTPVezeZKc7GA//aovlBZIkRGJQnPcjNY7mD/ruu4Y1PS4xTPN76057t5Pf/Gil3dfC+IBxXahajCrJBKCsSHhr2sXqsQHDpkeoCMqlJo27rfpCSvcikr/q897TfKrmXTo0vh/j5sq3uPVPW9Gm5uu14qpacYA==
 install:
   - pip install -r requirements.txt
 
@@ -26,6 +26,7 @@ script:
   - which python && coverage run --branch test.py
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
   - echo $Foo 
+  - echo $test
   
 notifications:
   email: false
