@@ -1,5 +1,6 @@
 language: python
 
+
 build_image: shippable/minv2
 python:
   - 2.7
@@ -29,7 +30,7 @@ script:
   - echo $test
   
 notifications:
-  email: false
+  email: vidya@shippable.com
 
 archive: true
 commit_container: vidyar/sample_python_mongodb_project
