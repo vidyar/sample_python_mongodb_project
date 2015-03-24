@@ -5,6 +5,7 @@ build_image: shippable/minv2
 python:
   - 2.7
   - 3.3
+  - 3.2
 
 # Mongo binds to 127.0.0.1 by default
 services:
